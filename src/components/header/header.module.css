@@ -4,7 +4,8 @@
 .header {
   width: 100vw;
   height: 100vh;
-  color: rgb(53, 53, 53);
+  background-color: rgb(32, 32, 32);
+  color: #ececec;
 }
 
 .bgLayer {
@@ -14,22 +15,69 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-color: rgba(0, 0, 0, 0.644); */
+  position: relative;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 250px;
+  margin-right: 5%;
+  opacity: 0;
+  animation: logoAni ease-in-out 2s infinite, opacity 2s ease-in 0.5s forwards;
 }
 
 .titleBox {
-  padding: 50px;
-  border: 5px solid black;
-  border-radius: 10px;
   font-family: "Noto Sans JP", sans-serif;
-  font-size: 6em;
-  font-weight: 700;
+  width: 600px;
+  /* filter: drop-shadow(4px 4px 1px #f29c79); */
 }
 
-/* .welcome,
-.donghee,
-.portfolio {
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: 6em;
-  font-weight: 700;
-} */
+@keyframes logoAni {
+  0% {
+  }
+  50% {
+    transform: translateY(-5%);
+  }
+  100% {
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.bot {
+  margin-top: 20vh;
+  position: absolute;
+  bottom: 20%;
+}
+
+.scrollDown::after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 5vh;
+  width: 2px;
+  height: 13vh;
+  background-color: #ececec;
+  animation: lineAni ease-out 1.2s infinite;
+}
+
+@keyframes lineAni {
+  0% {
+    height: 6vh;
+  }
+  100% {
+    height: 13vh;
+  }
+}

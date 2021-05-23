@@ -2,6 +2,7 @@ import { useState } from "react";
 import styles from "./app.module.css";
 import Header from "./components/header/header";
 import MenuList from "./components/menu_list/menu_list";
+import MyWork1 from "./components/my_work_1/my_work_1";
 import Nav from "./components/nav/nav";
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
   const handleCloseMenu = () => {
     setShowMenu(false);
   };
-
+  // showMenu가 true 이면 메뉴 리스트 창 표시.
   const menuList = showMenu ? (
     <MenuList handleCloseMenu={handleCloseMenu} />
   ) : null;
@@ -25,6 +26,7 @@ function App() {
       <Nav handleShowMenu={handleShowMenu} />
       {menuList}
       <Header />
+      <MyWork1 />
     </div>
   );
 }

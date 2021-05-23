@@ -1,12 +1,15 @@
 .menuList {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(231, 146, 136, 0.945);
+  background-color: rgb(231, 146, 136);
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 10;
+  animation: circleFill 1s ease forwards;
 }
 
 .list {
@@ -51,4 +54,13 @@
 .closeBtn:hover {
   cursor: pointer;
   transform: rotate(180deg);
+}
+
+@keyframes circleFill {
+  0% {
+    clip-path: circle(0% at 0 0);
+  }
+  100% {
+    clip-path: circle(100%);
+  }
 }
