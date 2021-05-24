@@ -1,0 +1,25 @@
+.imgSlide {
+  position: relative;
+  width: 35vw;
+  height: 69vh;
+  box-shadow: 15px 15px 20px rgb(66, 66, 66);
+  overflow: hidden;
+}
+
+.imgSlide:hover {
+  cursor: pointer;
+}
+
+.imgSlide:hover .img1 {
+  transform: translateY(-54%);
+}
+
+.img1,
+.img2,
+.img3,
+.img4 {
+  position: absolute;
+  left: 0;
+  width: 35vw;
+  transition: all 3s ease-in-out;
+}

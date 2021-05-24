@@ -1,8 +1,95 @@
 .mywork1 {
   width: 100vw;
   height: 100vh;
-  background-color: cadetblue;
+  background-color: #5d9493;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ececec;
+}
+
+.title {
+  font-size: 1.5em;
+  margin-bottom: 2%;
+  margin-top: -5%;
+}
+
+.ctnWrap {
+  width: 72vw;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.txtBox {
+  width: 35vw;
+  padding: 20px 30px;
+  background-color: rgba(0, 0, 0, 0.274);
+  box-shadow: 15px 15px 20px rgb(66, 66, 66);
+  position: relative;
+}
+
+.subTit {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  filter: drop-shadow(3px 3px 3px black);
+}
+
+.subTxt {
+  font-size: 1em;
+  color: #cecece;
+  filter: drop-shadow(3px 3px 3px black);
+}
+
+.overview {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 1.2em;
+  filter: drop-shadow(3px 3px 3px black);
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  filter: drop-shadow(3px 3px 3px black);
+}
+
+.info > ul {
+  width: 47%;
+}
+
+.list {
+  font-size: 0.95em;
+  margin-left: 5px;
+  color: #cecece;
+}
+
+.btnsWrap {
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
+  bottom: 25px;
+  left: 26%;
+}
+
+.btns {
+  all: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  margin-right: 20px;
+  color: #ececec;
+  border: 1px solid #ececec;
+  width: 150px;
+  height: 50px;
+  filter: drop-shadow(3px 3px 3px black);
+  transition: all 0.35s ease-in;
+}
+
+.btns:hover {
+  cursor: pointer;
+  background-color: #5d9493;
 }
