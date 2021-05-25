@@ -9,3 +9,6 @@
     - my work #1 섹션 추가(TMDb app)
     - 이미지 호버시 스크롤 다운
     - 텍스트 박스 추가
+- 21-05-25
+    - my work #1 이미지 슬라이드(react-responsive-carousel 플러그인), 이미지 호버 추가.
+    - 텍스트 박스 style 변경
