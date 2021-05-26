@@ -11,7 +11,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  z-index: 10;
+  z-index: 13;
 }
 
 .logo {
@@ -98,11 +98,12 @@
 
 .gitHub {
   margin-bottom: 15px;
-  transition: all 0.35s ease-in;
+  transition: all 0.25s ease-in;
 }
 
-.enevelope {
-  transition: all 0.35s ease-in;
+.enevelope,
+.phone {
+  transition: all 0.25s ease-in;
 }
 
 .gitHub:hover,
