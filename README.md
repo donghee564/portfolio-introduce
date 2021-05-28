@@ -19,3 +19,6 @@
     - my work #1 레이아웃 변경, 배경 이미지로 변경
     - my work #2 섹션 추가.
     - 레이아웃 width 1400px로 변경. 배경이 조금 복잡한느낌..?
+- 21-05-28
+    - my work #3 섹션 추가.
+    - fullpage scroll 
