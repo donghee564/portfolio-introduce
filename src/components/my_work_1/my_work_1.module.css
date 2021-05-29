@@ -1,11 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&display=swap");
 
 .mywork1 {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
-  background-color: #5d9493;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   color: #ececec;
@@ -13,20 +11,24 @@
 }
 
 .ctnBg {
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.274);
-  /* backdrop-filter: blur(5px); */
-  box-shadow: 15px 15px 20px rgb(39, 39, 39);
+  padding: 20px 0;
+  width: 1400px;
+  height: 650px;
+  background-color: rgba(255, 255, 255, 0.048);
+  backdrop-filter: blur(5px);
+  box-shadow: 15px 15px 20px rgb(0, 0, 0);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .ctnWrap {
-  width: 72%;
-  height: 68vh;
+  border: 1px solid #ececec;
+  padding: 20px;
+  width: 90%;
+  height: 99%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   position: relative;
 }
@@ -34,17 +36,23 @@
 .subTitWrap {
   position: absolute;
   left: 40px;
-  top: -33px;
+  top: -42px;
   margin-bottom: 20px;
   display: flex;
   align-items: baseline;
-  filter: drop-shadow(3px 3px 3px rgb(44, 44, 44));
+  filter: drop-shadow(5px 5px 5px rgb(19, 19, 19));
 }
 
 .subTit {
   font-size: 2.6em;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+}
+
+.currNum {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.7em;
+  font-weight: 300;
 }
 
 .subTxt {
@@ -55,7 +63,7 @@
 .pageNation {
   position: absolute;
   color: #ececec7c;
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 400;
   top: 4%;
   right: 5%;

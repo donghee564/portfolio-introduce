@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import styles from "./img_slide_1.module.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
@@ -13,7 +13,7 @@ const ImgSlide1 = (props) => {
         autoPlay={true}
         stopOnHover={true}
         infiniteLoop={true}
-        interval={3500}
+        interval={4000}
         showStatus={false}
       >
         <div className={styles.imgWrap}>
@@ -49,4 +49,4 @@ const ImgSlide1 = (props) => {
   );
 };
 
-export default ImgSlide1;
+export default memo(ImgSlide1);

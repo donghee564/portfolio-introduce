@@ -5,12 +5,7 @@ import styles from "./header.module.css";
 
 const Header = () => {
   return (
-    <header
-      // style={{
-      //   background: "url('images/header-bg.jpg') center center/cover fixed",
-      // }}
-      className={styles.header}
-    >
+    <header className={styles.header}>
       <div className={styles.bgLayer}>
         <div className={styles.center}>
           <img className={styles.logo} src="/images/logo.png" alt="logo.png" />

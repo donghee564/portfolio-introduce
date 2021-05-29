@@ -7,10 +7,9 @@ const MyWork1 = (props) => {
   return (
     <section
       className={styles.mywork1}
-      // style={{
-      //   background:
-      //     "url('images/black-pattern-bg.jpg') center center/cover fixed",
-      // }}
+      style={{
+        background: "url('images/page_movie_bg.jpg') center center/cover",
+      }}
     >
       <p className={styles.pageNation}>
         My Work # <span className={styles.currPage}>1</span> / 3
@@ -18,7 +17,9 @@ const MyWork1 = (props) => {
       <div className={styles.ctnBg}>
         <div className={styles.ctnWrap}>
           <div className={styles.subTitWrap}>
-            <h3 className={styles.subTit}>TMDb Movie App</h3>
+            <h3 className={styles.subTit}>
+              <span className={styles.currNum}>#01</span> TMDb Movie App
+            </h3>
             <p className={styles.subTxt}>create-react-app</p>
           </div>
           <MyWork1TxtBox />

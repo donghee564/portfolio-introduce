@@ -1,5 +1,5 @@
 .header {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-color: rgb(32, 32, 32);
   color: #ececec;
@@ -25,6 +25,7 @@
   width: 250px;
   margin-right: 5%;
   opacity: 0;
+  will-change: transform;
   animation: logoAni ease-in-out 2s infinite, opacity 2s ease-in 0.5s forwards;
 }
 

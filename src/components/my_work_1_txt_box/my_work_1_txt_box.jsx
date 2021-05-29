@@ -11,18 +11,24 @@ const MyWork1TxtBox = (props) => {
         <div className={styles.info}>
           <ul>
             <li className={styles.listTit}>사용 라이브러리</li>
-            <li className={styles.list}>react-router</li>
             <li className={styles.list}>axios</li>
-            <li className={styles.list}>bootstraop-icons</li>
+            <li className={styles.list}>react-router</li>
+            <li className={styles.list}>bootstrap-icons</li>
             <li className={styles.list}>react-responsive-carousel</li>
           </ul>
         </div>
-        {/* <ul className={styles.subInfoWrap}>
+        <ul className={styles.subInfoWrap}>
           <li className={styles.subInfo}>
             <p>
-              <span className={styles.num}>27</span> 일
+              <span className={styles.num}>21</span> 일
             </p>
             <p>제작 기간</p>
+          </li>
+          <li className={styles.subInfo}>
+            <p>
+              <span className={styles.num}>100</span> %
+            </p>
+            <p>기획</p>
           </li>
           <li className={styles.subInfo}>
             <p>
@@ -36,7 +42,7 @@ const MyWork1TxtBox = (props) => {
             </p>
             <p>디자인</p>
           </li>
-        </ul> */}
+        </ul>
         <div className={styles.funcWrap}>
           <p className={styles.funcTit}>기능요약</p>
           <p className={styles.func}>
@@ -50,7 +56,7 @@ const MyWork1TxtBox = (props) => {
               href="https://github.com/donghee564/TMDB_movie_app"
               target="blank"
             >
-              Repo
+              REPO
             </a>
           </button>
           <button className={styles.btns}>
