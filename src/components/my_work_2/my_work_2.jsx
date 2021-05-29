@@ -26,8 +26,8 @@ const MyWork2 = (props) => {
             <div className={styles.imgWrap}>
               <img
                 className={styles.img}
-                src="images/weather_app_images/weather_app_bg.png"
-                alt="weather_app_bg.png"
+                src="images/weather_app_images/weather_app_bg1.png"
+                alt="weather_app_bg1.png"
               />
             </div>
           </div>

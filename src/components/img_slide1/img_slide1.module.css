@@ -1,0 +1,37 @@
+.imgSlide {
+  width: 600px;
+  height: 58vh;
+  box-shadow: 10px 10px 15px rgb(17, 17, 17);
+  position: relative;
+}
+
+.imgWrap {
+  width: 100%;
+  height: 58vh;
+  overflow: hidden;
+}
+
+.imgWrap:hover {
+  cursor: pointer;
+}
+
+.imgWrap:hover .img1 {
+  transform: translateY(-58%);
+}
+.imgWrap:hover .img2 {
+  transform: translateY(-50%);
+}
+.imgWrap:hover .img3 {
+  transform: translateY(-20%);
+}
+.imgWrap:hover .img4 {
+  transform: translateY(-26%);
+}
+
+.img1,
+.img2,
+.img3,
+.img4 {
+  width: 100%;
+  transition: transform 2s ease-in-out;
+}

@@ -1,5 +1,5 @@
 import React, { memo } from "react";
-import ImgSlide1 from "../img_slide_1/img_slide_1";
+import ImgSlide1 from "../img_slide1/img_slide1";
 import MyWork1TxtBox from "../my_work_1_txt_box/my_work_1_txt_box";
 import styles from "./my_work_1.module.css";
 
@@ -8,7 +8,7 @@ const MyWork1 = (props) => {
     <section
       className={styles.mywork1}
       style={{
-        background: "url('images/page_movie_bg.jpg') center center/cover",
+        background: "url('images/page_movie_bg.jpg') bottom center/cover fixed",
       }}
     >
       <p className={styles.pageNation}>

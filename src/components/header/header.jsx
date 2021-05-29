@@ -17,6 +17,13 @@ const Header = () => {
         <div className={styles.bot}>
           <p className={styles.scrollDown}>scroll down</p>
         </div>
+        <div className={styles.subTxtBox}>
+          <p>안녕하세요. 한동희의 개인 포트폴리오 사이트 입니다.</p>
+          <p>
+            본 포트폴리오 사이트는 Google Chorome, Microsoft Edge 브라우저에
+            최적화 되어 있습니다.
+          </p>
+        </div>
       </div>
     </header>
   );

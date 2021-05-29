@@ -42,6 +42,7 @@ function App() {
           <MyWork3 />
         </Slide>
       </FullPage>
+      <p className={styles.email}>poohaha8974@gmail.com</p>
     </div>
   );
 }

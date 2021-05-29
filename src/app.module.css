@@ -6,3 +6,12 @@
   position: relative;
   font-family: "Noto Sans JP", sans-serif;
 }
+
+.email {
+  color: white;
+  position: fixed;
+  right: 2%;
+  bottom: 2%;
+  opacity: 0.8;
+  font-size: 0.7em;
+}

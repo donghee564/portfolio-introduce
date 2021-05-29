@@ -1,5 +1,4 @@
 import React from "react";
-import { Github, Envelope, PhoneVibrate } from "react-bootstrap-icons";
 import styles from "./nav.module.css";
 
 const Nav = ({ handleShowMenu }) => {
@@ -19,7 +18,7 @@ const Nav = ({ handleShowMenu }) => {
         <li className={styles.line2}></li>
         <li className={styles.line3}></li>
       </ul>
-      <ul className={styles.sns}>
+      {/* <ul className={styles.sns}>
         <li className={styles.gitHub}>
           <Github size={22} color="#ececec" />
         </li>
@@ -29,7 +28,7 @@ const Nav = ({ handleShowMenu }) => {
         <li className={styles.envelope}>
           <Envelope size={22} color="#ececec" />
         </li>
-      </ul>
+      </ul> */}
     </nav>
   );
 };

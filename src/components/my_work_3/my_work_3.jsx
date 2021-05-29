@@ -1,5 +1,5 @@
 import React, { memo } from "react";
-import ImgSlide3 from "../img_slide_3/img_slide_3";
+import ImgSlide3 from "../img_slide3/img_slide3";
 import MyWork3TxtBox from "../my_work_3_txt_box/my_work_3_txt_box";
 import styles from "./my_work_3.module.css";
 
@@ -8,8 +8,7 @@ const MyWork3 = (props) => {
     <section
       className={styles.mywork1}
       style={{
-        background:
-          "url('images/chase_bank_images/chase_bank_bg.png') center center/cover fixed",
+        background: "url('images/chase_bank_bg.jpg') bottom center/cover fixed",
       }}
     >
       <p className={styles.pageNation}>
