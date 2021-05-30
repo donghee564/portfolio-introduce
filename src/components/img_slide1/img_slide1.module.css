@@ -16,16 +16,16 @@
 }
 
 .imgWrap:hover .img1 {
-  transform: translateY(-58%);
+  transform: translateY(-61%);
 }
 .imgWrap:hover .img2 {
-  transform: translateY(-50%);
+  transform: translateY(-54%);
 }
 .imgWrap:hover .img3 {
-  transform: translateY(-20%);
+  transform: translateY(-25%);
 }
 .imgWrap:hover .img4 {
-  transform: translateY(-26%);
+  transform: translateY(-31%);
 }
 
 .img1,

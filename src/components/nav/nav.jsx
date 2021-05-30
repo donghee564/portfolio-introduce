@@ -1,7 +1,7 @@
-import React from "react";
+import React, { memo } from "react";
 import styles from "./nav.module.css";
 
-const Nav = ({ handleShowMenu }) => {
+const Nav = ({ handleShowMenu, showMenu }) => {
   const handleListClick = () => {
     handleShowMenu();
   };
@@ -14,23 +14,12 @@ const Nav = ({ handleShowMenu }) => {
         alt="logo_icon.png"
       /> */}
       <ul onClick={handleListClick} className={styles.list}>
-        <li className={styles.line1}></li>
-        <li className={styles.line2}></li>
-        <li className={styles.line3}></li>
+        <li className={showMenu ? styles.closeBtn1 : styles.line1}></li>
+        <li className={showMenu ? styles.closeBtn2 : styles.line2}></li>
+        <li className={showMenu ? styles.closeBtn3 : styles.line3}></li>
       </ul>
-      {/* <ul className={styles.sns}>
-        <li className={styles.gitHub}>
-          <Github size={22} color="#ececec" />
-        </li>
-        <li className={styles.gitHub}>
-          <PhoneVibrate size={22} color="#ececec" />
-        </li>
-        <li className={styles.envelope}>
-          <Envelope size={22} color="#ececec" />
-        </li>
-      </ul> */}
     </nav>
   );
 };
 
-export default Nav;
+export default memo(Nav);

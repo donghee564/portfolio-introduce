@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 500px;
+  width: 450px;
   height: 100%;
   background-color: rgba(231, 146, 136, 0.87);
   z-index: 10;
@@ -15,7 +15,18 @@
   position: absolute;
   bottom: 7%;
   right: 9%;
-  font-size: 1.2em;
+  font-size: 1.1em;
+}
+
+.contactWrap > ul > li > a {
+  width: 300px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contactWrap > ul > li > a > p {
+  margin-left: 2%;
 }
 
 .list {
@@ -52,18 +63,6 @@
 
 .listItems > p:hover::after {
   width: 100%;
-}
-
-.closeBtn {
-  position: absolute;
-  top: 1%;
-  right: 2%;
-  transition: all 0.7s;
-}
-
-.closeBtn:hover {
-  cursor: pointer;
-  transform: rotate(180deg);
 }
 
 @keyframes circleFill {
