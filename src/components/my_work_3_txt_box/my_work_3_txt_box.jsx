@@ -51,38 +51,40 @@ const MyWork3TxtBox = (props) => {
           </p>
           <p className={styles.func}>반응형 페이지(main, sub1)</p>
         </div>
-        <div className={styles.btnsWrap}>
-          <button className={styles.btns}>
-            <a href="https://github.com/donghee564/chase-bank" target="blank">
-              REPO
-            </a>
-          </button>
-          <button className={styles.btns}>
-            <a
-              href="https://donghee564.github.io/chase-bank/chase_main"
-              target="blank"
-            >
-              DEMO MAIN
-            </a>
-          </button>
-        </div>
-        <div className={styles.btnsWrap2}>
-          <button className={styles.btns}>
-            <a
-              href="https://donghee564.github.io/chase-bank/chase_sub1"
-              target="blank"
-            >
-              DEMO SUB 1
-            </a>
-          </button>
-          <button className={styles.btns}>
-            <a
-              href="https://donghee564.github.io/chase-bank/chase_sub2"
-              target="blank"
-            >
-              DEMO SUB 2
-            </a>
-          </button>
+        <div className={styles.btnsContainer}>
+          <div className={styles.btnsWrap}>
+            <button className={styles.btns}>
+              <a href="https://github.com/donghee564/chase-bank" target="blank">
+                REPO
+              </a>
+            </button>
+            <button className={styles.btns}>
+              <a
+                href="https://donghee564.github.io/chase-bank/chase_main"
+                target="blank"
+              >
+                DEMO MAIN
+              </a>
+            </button>
+          </div>
+          <div className={styles.btnsWrap2}>
+            <button className={styles.btns}>
+              <a
+                href="https://donghee564.github.io/chase-bank/chase_sub1"
+                target="blank"
+              >
+                DEMO SUB 1
+              </a>
+            </button>
+            <button className={styles.btns}>
+              <a
+                href="https://donghee564.github.io/chase-bank/chase_sub2"
+                target="blank"
+              >
+                DEMO SUB 2
+              </a>
+            </button>
+          </div>
         </div>
       </div>
     </div>

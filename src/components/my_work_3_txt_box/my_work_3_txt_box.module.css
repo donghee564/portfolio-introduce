@@ -97,3 +97,150 @@
   cursor: pointer;
   background-color: #ececec41;
 }
+
+/* 반응형 */
+@media (max-width: 1450px) {
+  .txtBoxWrap {
+    font-size: 0.9em;
+  }
+  .txtBox {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .txtBoxWrap {
+    margin-left: -5%;
+    font-size: 0.85em;
+  }
+}
+
+@media (max-width: 1000px) {
+  .txtBoxWrap {
+    margin-left: -5%;
+    font-size: 0.75em;
+  }
+}
+
+@media (max-width: 890px) {
+  .txtBoxWrap {
+    margin: 0;
+    font-size: 0.75em;
+    width: 100%;
+    height: 40%;
+  }
+
+  .txtBox {
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .overview {
+    width: 50%;
+    margin: 0;
+  }
+
+  .subInfoWrap {
+    width: 48%;
+  }
+
+  .info {
+    width: 50%;
+    display: none;
+  }
+
+  .funcWrap {
+    width: 50%;
+    margin-bottom: 10%;
+  }
+
+  .btnsWrap {
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .btnsWrap2 {
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .btns {
+    width: 100px;
+    margin-bottom: 7%;
+  }
+}
+
+@media (max-width: 700px) {
+  .txtBoxWrap {
+    margin-top: 20px;
+    font-size: 1.7em;
+    width: 100%;
+    height: 40%;
+  }
+
+  .txtBox {
+    width: 90%;
+  }
+
+  .overview {
+    width: 100%;
+    margin: 0;
+  }
+
+  .subInfoWrap {
+    width: 100%;
+  }
+
+  .info {
+    width: 100%;
+    display: none;
+  }
+
+  .funcWrap {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .btnsContainer {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .btnsWrap {
+    width: 50%;
+    flex-direction: row;
+  }
+
+  .btnsWrap2 {
+    width: 50%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .btns {
+    margin: 0;
+    margin-right: 8px;
+    margin-top: 10px;
+    width: 45%;
+    height: 35px;
+  }
+}
+
+@media (max-width: 578px) {
+  .btns {
+    width: 65px;
+  }
+}

@@ -6,7 +6,7 @@ import styles from "./my_work_1.module.css";
 const MyWork1 = (props) => {
   return (
     <section
-      className={styles.mywork1}
+      className={styles.myWork1}
       style={{
         background: "url('images/page_movie_bg.jpg') bottom center/cover fixed",
       }}

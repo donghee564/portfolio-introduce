@@ -11,7 +11,6 @@ import ThankYou from "./components/thank_you/thank_you";
 
 function App() {
   const [showMenu, setShowMenu] = useState(false); //메뉴 아이콘 상태
-  const [currSlide, setCurrSlide] = useState(0); // 현재 슬라이드 인덱스
   const fullPageRef = useRef();
 
   //메뉴 아이콘 클릭 시 메뉴 창 토글.
@@ -23,9 +22,6 @@ function App() {
   const handleMenuClick = (i) => {
     fullPageRef.current.scrollToSlide(i);
   };
-
-  // const currSlideIndex = fullPageRef.current.getCurrentSlideIndex();
-  // console.log(currSlideIndex);
 
   // showMenu가 true 이면 메뉴 리스트 창 표시.
   const menuList = showMenu ? (

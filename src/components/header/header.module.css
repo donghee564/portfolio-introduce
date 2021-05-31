@@ -84,6 +84,40 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  opacity: 0.7;
+  opacity: 0.65;
   margin-top: 2%;
+}
+
+/* 반응형 */
+@media (max-width: 823px) {
+  .header {
+    font-size: 0.65em;
+  }
+
+  .center {
+    margin-top: -8%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .titleBox {
+    width: 80%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 475px) {
+  .header {
+    font-size: 0.58em;
+  }
+
+  .logo {
+    width: 220px;
+  }
+
+  .subTxtBox {
+    margin-top: 5%;
+    width: 70%;
+    text-align: center;
+  }
 }

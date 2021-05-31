@@ -3,10 +3,70 @@
   height: 100vh;
   background-color: cadetblue;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .title {
-  font-size: 3em;
+  font-weight: 700;
+  font-size: 4em;
+  margin-bottom: 3%;
+}
+
+.contacts {
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+.contacts > span {
+  font-weight: 400;
+  font-size: 0.9em;
+  margin-left: 10px;
+}
+
+.info {
+  margin-top: 2%;
+  text-align: center;
+}
+
+.btn {
+  all: unset;
+  margin-top: 20px;
+  border: 1px solid black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.35s ease-in;
+}
+
+.btn:hover {
+  cursor: pointer;
+  border: 1px solid #ececec;
+  color: #ececec;
+  background-color: rgba(231, 146, 136, 0.87);
+}
+
+.smile {
+  display: inline-block;
+  animation: smileAni 2s ease-in infinite;
+}
+
+@keyframes smileAni {
+  0% {
+    transform: translateY(2%);
+  }
+  50% {
+    transform: translateY(-8%);
+  }
+  100% {
+    transform: translateY(2%);
+  }
+}
+
+/* 반응형 */
+@media (max-width: 700px) {
+  .wrap {
+    font-size: 0.8em;
+  }
 }

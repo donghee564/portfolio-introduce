@@ -18,14 +18,14 @@
   font-size: 1.1em;
 }
 
-.contactWrap > ul > li > a {
+.contactWrap > ul > li {
   width: 300px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-.contactWrap > ul > li > a > p {
+.contactWrap > ul > li > p {
   margin-left: 2%;
 }
 
@@ -71,5 +71,20 @@
   }
   100% {
     clip-path: circle(100%);
+  }
+}
+
+/* 반응형 */
+@media (max-width: 1000px) {
+  .menuList {
+    width: 40%;
+    font-size: 0.7em;
+  }
+}
+
+@media (max-width: 700px) {
+  .menuList {
+    width: 100%;
+    font-size: 0.7em;
   }
 }
