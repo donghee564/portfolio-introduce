@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio-introduce/static/css/main.cb5266b6.chunk.css",
-    "main.js": "/portfolio-introduce/static/js/main.52bafdd2.chunk.js",
-    "main.js.map": "/portfolio-introduce/static/js/main.52bafdd2.chunk.js.map",
+    "main.js": "/portfolio-introduce/static/js/main.a17246fc.chunk.js",
+    "main.js.map": "/portfolio-introduce/static/js/main.a17246fc.chunk.js.map",
     "runtime-main.js": "/portfolio-introduce/static/js/runtime-main.9fb9705b.js",
     "runtime-main.js.map": "/portfolio-introduce/static/js/runtime-main.9fb9705b.js.map",
     "static/css/2.02daa001.chunk.css": "/portfolio-introduce/static/css/2.02daa001.chunk.css",
@@ -11,13 +11,24 @@
     "index.html": "/portfolio-introduce/index.html",
     "static/css/2.02daa001.chunk.css.map": "/portfolio-introduce/static/css/2.02daa001.chunk.css.map",
     "static/css/main.cb5266b6.chunk.css.map": "/portfolio-introduce/static/css/main.cb5266b6.chunk.css.map",
-    "static/js/2.70799997.chunk.js.LICENSE.txt": "/portfolio-introduce/static/js/2.70799997.chunk.js.LICENSE.txt"
+    "static/js/2.70799997.chunk.js.LICENSE.txt": "/portfolio-introduce/static/js/2.70799997.chunk.js.LICENSE.txt",
+    "static/media/bg.9a83c0fc.jpg": "/portfolio-introduce/static/media/bg.9a83c0fc.jpg",
+    "static/media/chase_bank_bg.822ceb05.jpg": "/portfolio-introduce/static/media/chase_bank_bg.822ceb05.jpg",
+    "static/media/chase_main.7ed72a43.jpg": "/portfolio-introduce/static/media/chase_main.7ed72a43.jpg",
+    "static/media/chase_sub1.7bd0fd0e.jpg": "/portfolio-introduce/static/media/chase_sub1.7bd0fd0e.jpg",
+    "static/media/chase_sub2.70f7915c.jpg": "/portfolio-introduce/static/media/chase_sub2.70f7915c.jpg",
+    "static/media/movie_app1.62667b71.png": "/portfolio-introduce/static/media/movie_app1.62667b71.png",
+    "static/media/movie_app2.d50d1d07.png": "/portfolio-introduce/static/media/movie_app2.d50d1d07.png",
+    "static/media/movie_app3.bdd6e491.png": "/portfolio-introduce/static/media/movie_app3.bdd6e491.png",
+    "static/media/movie_app4.fc8d3a0e.png": "/portfolio-introduce/static/media/movie_app4.fc8d3a0e.png",
+    "static/media/page_movie_bg.e52ae836.jpg": "/portfolio-introduce/static/media/page_movie_bg.e52ae836.jpg",
+    "static/media/weather_app_bg1.e32ad4c4.png": "/portfolio-introduce/static/media/weather_app_bg1.e32ad4c4.png"
   },
   "entrypoints": [
     "static/js/runtime-main.9fb9705b.js",
     "static/css/2.02daa001.chunk.css",
     "static/js/2.70799997.chunk.js",
     "static/css/main.cb5266b6.chunk.css",
-    "static/js/main.52bafdd2.chunk.js"
+    "static/js/main.a17246fc.chunk.js"
   ]
 }
