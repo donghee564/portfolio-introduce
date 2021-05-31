@@ -1,13 +1,15 @@
 import React, { memo } from "react";
 import MyWork2TxtBox from "../my_work_2_txt_box/my_work_2_txt_box";
 import styles from "./my_work_2.module.css";
+import bg2 from "../../images/bg.jpg";
+import weatherImg from "../../images/weather_app_images/weather_app_bg1.png";
 
 const MyWork2 = (props) => {
   return (
     <section
       className={styles.mywork1}
       style={{
-        background: "url('images/bg.jpg') center center/cover fixed",
+        background: `url(${bg2}) bottom center/cover fixed`,
       }}
     >
       <p className={styles.pageNation}>
@@ -26,7 +28,7 @@ const MyWork2 = (props) => {
             <div className={styles.imgWrap}>
               <img
                 className={styles.img}
-                src="images/weather_app_images/weather_app_bg1.png"
+                src={weatherImg}
                 alt="weather_app_bg1.png"
               />
             </div>

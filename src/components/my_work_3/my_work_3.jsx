@@ -2,13 +2,14 @@ import React, { memo } from "react";
 import ImgSlide3 from "../img_slide3/img_slide3";
 import MyWork3TxtBox from "../my_work_3_txt_box/my_work_3_txt_box";
 import styles from "./my_work_3.module.css";
+import bg3 from "../../images/chase_bank_bg.jpg";
 
 const MyWork3 = (props) => {
   return (
     <section
       className={styles.mywork1}
       style={{
-        background: "url('images/chase_bank_bg.jpg') bottom center/cover fixed",
+        background: `url(${bg3}) bottom center/cover fixed`,
       }}
     >
       <p className={styles.pageNation}>
