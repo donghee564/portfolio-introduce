@@ -118,25 +118,5 @@
   }
 }
 
-/* .sns {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+@media (max-width: 420px) {
 }
-
-.gitHub {
-  margin-bottom: 15px;
-  transition: all 0.25s ease-in;
-}
-
-.enevelope,
-.phone {
-  transition: all 0.25s ease-in;
-}
-
-.gitHub:hover,
-.envelope:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-} */

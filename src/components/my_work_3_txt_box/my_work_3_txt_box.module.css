@@ -128,6 +128,7 @@
     font-size: 0.75em;
     width: 100%;
     height: 40%;
+    text-align: center;
   }
 
   .txtBox {
@@ -199,7 +200,7 @@
   }
 
   .subInfoWrap {
-    width: 100%;
+    width: 80%;
   }
 
   .info {
@@ -241,6 +242,21 @@
 
 @media (max-width: 578px) {
   .btns {
-    width: 65px;
+    width: 75px;
+  }
+}
+
+@media (max-width: 420px) {
+  .subInfoWrap {
+    display: none;
+  }
+
+  .btnsWrap {
+    flex-direction: column;
+  }
+
+  .btns {
+    width: 80%;
+    margin-bottom: 5%;
   }
 }

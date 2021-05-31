@@ -164,4 +164,8 @@
   .hoverMe {
     display: none;
   }
+
+  .subTxt {
+    display: none;
+  }
 }
