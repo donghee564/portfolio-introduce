@@ -119,4 +119,7 @@
 }
 
 @media (max-width: 420px) {
+  .nav {
+    display: none;
+  }
 }

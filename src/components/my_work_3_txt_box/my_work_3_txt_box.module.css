@@ -228,7 +228,6 @@
   .btnsWrap2 {
     width: 50%;
     flex-direction: row;
-    flex-wrap: wrap;
   }
 
   .btns {
@@ -246,17 +245,24 @@
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 535px) {
   .subInfoWrap {
     display: none;
   }
 
   .btnsWrap {
-    flex-direction: column;
+  }
+
+  .btnsWrap2 {
+  }
+
+  .funcWrap {
+    margin-top: 20px;
+    width: 100%;
   }
 
   .btns {
-    width: 80%;
+    width: 100%;
     margin-bottom: 5%;
   }
 }
