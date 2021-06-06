@@ -31,12 +31,13 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
+  overflow: hidden;
 }
 
 .subTitWrap {
   position: absolute;
   left: 40px;
-  top: -42px;
+  top: -22px;
   margin-bottom: 20px;
   display: flex;
   align-items: baseline;
@@ -78,6 +79,7 @@
   height: 58vh;
   box-shadow: 10px 10px 15px rgb(17, 17, 17);
   overflow: hidden;
+  transform: translateX(-150%);
 }
 
 .img {
@@ -91,10 +93,25 @@
   transform: translateY(-21%);
 }
 
+.onScroll {
+  animation: imageSlideAni ease-out forwards;
+  animation-duration: 0.5s;
+  animation-delay: 0.3s;
+}
+
+@keyframes imageSlideAni {
+  0% {
+    transform: translateX(-150%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 .hoverMe {
   position: absolute;
   font-size: 1.3em;
-  left: -100px;
+  left: -2%;
   bottom: 50%;
   transform: rotate(-90deg);
 }
@@ -200,8 +217,9 @@
 @media (max-width: 700px) {
   .ctnBg {
     font-size: 0.45em;
-    width: 90%;
+    width: 99%;
     height: 90%;
+    box-shadow: none;
   }
 
   .ctnWrap {
@@ -213,6 +231,7 @@
     margin-top: 5%;
     width: 330px;
     height: 320px;
+    box-shadow: none;
   }
 
   .img {

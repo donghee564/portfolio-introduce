@@ -1,10 +1,16 @@
 import React from "react";
 import styles from "./my_work_3_txt_box.module.css";
 
-const MyWork3TxtBox = (props) => {
+const MyWork3TxtBox = ({ scrollIndex }) => {
   return (
     <div className={styles.txtBoxWrap}>
-      <div className={styles.txtBox}>
+      <div
+        className={
+          scrollIndex.to === 3
+            ? `${styles.txtBox} ${styles.onScroll}`
+            : styles.txtBox
+        }
+      >
         <p className={styles.overview}>
           HTML, CSS, Java Script, jQuery를 활용한 Chase Bank Renewal 페이지
           입니다.

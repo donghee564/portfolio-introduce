@@ -1,10 +1,16 @@
 import React from "react";
 import styles from "./my_work_2_txt_box.module.css";
 
-const MyWork2TxtBox = (props) => {
+const MyWork2TxtBox = ({ scrollIndex }) => {
   return (
     <div className={styles.txtBoxWrap}>
-      <div className={styles.txtBox}>
+      <div
+        className={
+          scrollIndex.to === 2
+            ? `${styles.txtBox} ${styles.onScroll}`
+            : styles.txtBox
+        }
+      >
         <p className={styles.overview}>
           OpenWeatherMap 퍼블릭 API를 활용한 날씨 정보 웹 앱 입니다.
         </p>

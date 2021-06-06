@@ -1,10 +1,16 @@
 import React from "react";
 import styles from "./my_work_1_txt_box.module.css";
 
-const MyWork1TxtBox = (props) => {
+const MyWork1TxtBox = ({ scrollIndex }) => {
   return (
     <div className={styles.txtBoxWrap}>
-      <div className={styles.txtBox}>
+      <div
+        className={
+          scrollIndex.to === 1
+            ? `${styles.txtBox} ${styles.onScroll}`
+            : styles.txtBox
+        }
+      >
         <p className={styles.overview}>
           TMDb 퍼블릭 API를 활용한 영화, TV시리즈 순위, 정보, 검색 SPA 입니다.
         </p>

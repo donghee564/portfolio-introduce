@@ -9,15 +9,30 @@
   text-align: center;
 }
 
-.title {
+.titleBox {
   font-weight: 700;
   font-size: 4em;
   margin-bottom: 3%;
+  overflow: hidden;
+}
+
+.title {
+  transform: translateY(100%);
+}
+
+.onScrollTitle {
+  transition: all 1s;
+  transform: translateY(0);
+}
+
+.contactsWrap {
+  overflow: hidden;
 }
 
 .contacts {
   font-weight: 700;
   font-size: 1.2em;
+  transform: translateY(100%);
 }
 
 .contacts > span {
@@ -26,9 +41,29 @@
   margin-left: 10px;
 }
 
-.info {
+.onScrollContacts {
+  transition: all 1s;
+  transition-delay: 0.35s;
+  transform: translateY(0);
+}
+
+.infoBox {
   margin-top: 2%;
   text-align: center;
+}
+
+.infoWrap {
+  overflow: hidden;
+}
+
+.info {
+  transform: translateY(100%);
+}
+
+.onScrollInfo {
+  transition: all 1s;
+  transition-delay: 0.7s;
+  transform: translateY(0);
 }
 
 .btn {
@@ -38,6 +73,7 @@
   padding: 10px 20px;
   border-radius: 5px;
   transition: all 0.35s ease-in;
+  opacity: 0;
 }
 
 .btn:hover {
@@ -45,6 +81,20 @@
   border: 1px solid #ececec;
   color: #ececec;
   background-color: rgba(231, 146, 136, 0.87);
+}
+
+.onScrollBtn {
+  animation: btnAni 1s linear forwards;
+  animation-delay: 1s;
+}
+
+@keyframes btnAni {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .smile {

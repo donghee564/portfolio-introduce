@@ -11,7 +11,13 @@ import ThankYou from "./components/thank_you/thank_you";
 
 function App() {
   const [showMenu, setShowMenu] = useState(false); //메뉴 아이콘 상태
+  const [scrollIndex, setScrollIndex] = useState({}); //스크롤 페이지 index: from -> to
   const fullPageRef = useRef();
+
+  //full-page 스크롤 인덱스
+  const handleAfterChange = (indexes) => {
+    setScrollIndex(indexes);
+  };
 
   //메뉴 아이콘 클릭 시 메뉴 창 토글.
   const handleShowMenu = () => {
@@ -32,21 +38,21 @@ function App() {
     <div className={styles.app}>
       <Nav handleShowMenu={handleShowMenu} showMenu={showMenu} />
       {menuList}
-      <FullPage ref={fullPageRef}>
+      <FullPage ref={fullPageRef} afterChange={handleAfterChange}>
         <Slide>
           <Header />
         </Slide>
         <Slide>
-          <MyWork1 />
+          <MyWork1 scrollIndex={scrollIndex} />
         </Slide>
         <Slide>
-          <MyWork2 />
+          <MyWork2 scrollIndex={scrollIndex} />
         </Slide>
         <Slide>
-          <MyWork3 />
+          <MyWork3 scrollIndex={scrollIndex} />
         </Slide>
         <Slide>
-          <ThankYou />
+          <ThankYou scrollIndex={scrollIndex} />
         </Slide>
       </FullPage>
       <p className={styles.email}>poohaha8974@gmail.com</p>

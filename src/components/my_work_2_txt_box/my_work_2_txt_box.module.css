@@ -12,6 +12,21 @@
   padding: 20px 40px;
   position: relative;
   font-size: 0.85em;
+  opacity: 0;
+}
+
+.onScroll {
+  animation: txtBoxAni ease-in forwards;
+  animation-duration: 0.35s;
+}
+
+@keyframes txtBoxAni {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .overview {
@@ -207,6 +222,10 @@
 }
 
 @media (max-width: 535px) {
+  .txtBoxWrap {
+    margin-top: 20px;
+  }
+
   .subInfoWrap {
     display: none;
   }

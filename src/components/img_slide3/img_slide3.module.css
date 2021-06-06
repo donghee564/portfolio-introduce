@@ -121,6 +121,7 @@
   .imgSlide {
     width: 330px;
     height: 320px;
+    box-shadow: none;
   }
 
   .imgWrap {

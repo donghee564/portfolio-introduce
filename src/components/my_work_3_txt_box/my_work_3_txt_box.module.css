@@ -12,6 +12,21 @@
   padding: 20px 40px;
   position: relative;
   font-size: 0.85em;
+  opacity: 0;
+}
+
+.onScroll {
+  animation: txtBoxAni ease-in forwards;
+  animation-duration: 0.35s;
+}
+
+@keyframes txtBoxAni {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .overview {
@@ -239,15 +254,17 @@
   }
 }
 
-@media (max-width: 578px) {
-  .btns {
-    width: 75px;
-  }
-}
-
 @media (max-width: 535px) {
+  .txtBoxWrap {
+    height: 50%;
+  }
+
   .subInfoWrap {
     display: none;
+  }
+
+  .btnsContainer {
+    margin-top: 5px;
   }
 
   .btnsWrap {
@@ -263,6 +280,6 @@
 
   .btns {
     width: 100%;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
   }
 }

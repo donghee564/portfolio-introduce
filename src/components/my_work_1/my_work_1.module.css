@@ -31,12 +31,13 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  overflow: hidden;
 }
 
 .subTitWrap {
   position: absolute;
   left: 40px;
-  top: -42px;
+  top: -22px;
   margin-bottom: 20px;
   display: flex;
   align-items: baseline;
@@ -75,12 +76,28 @@
 
 .imgSlideWrap {
   position: relative;
+  transform: translateX(150%);
+}
+
+.onScroll {
+  animation: imageSlideAni ease-out forwards;
+  animation-duration: 0.5s;
+  animation-delay: 0.3s;
+}
+
+@keyframes imageSlideAni {
+  0% {
+    transform: translateX(150%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .hoverMe {
   position: absolute;
   font-size: 1.3em;
-  right: -120px;
+  right: -2.2%;
   top: 50%;
   transform: rotate(90deg);
 }
@@ -151,8 +168,9 @@
 @media (max-width: 700px) {
   .ctnBg {
     font-size: 0.45em;
-    width: 90%;
+    width: 99%;
     height: 90%;
+    box-shadow: none;
   }
 
   .ctnWrap {

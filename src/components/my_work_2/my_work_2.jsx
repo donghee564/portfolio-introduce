@@ -4,7 +4,7 @@ import styles from "./my_work_2.module.css";
 import bg2 from "../../images/bg.jpg";
 import weatherImg from "../../images/weather_app_images/weather_app_bg1.png";
 
-const MyWork2 = (props) => {
+const MyWork2 = ({ scrollIndex }) => {
   return (
     <section
       className={styles.mywork1}
@@ -16,16 +16,21 @@ const MyWork2 = (props) => {
         My Work # <span className={styles.currPage}>2</span> / 3
       </p>
       <div className={styles.ctnBg}>
+        <div className={styles.subTitWrap}>
+          <h3 className={styles.subTit}>
+            <span className={styles.currNum}>#02</span> Weather App
+          </h3>
+          <p className={styles.subTxt}>create-react-app</p>
+        </div>
         <div className={styles.ctnWrap}>
-          <div className={styles.subTitWrap}>
-            <h3 className={styles.subTit}>
-              <span className={styles.currNum}>#02</span> Weather App
-            </h3>
-            <p className={styles.subTxt}>create-react-app</p>
-          </div>
           <div className={styles.imgSlideWrap}>
-            <p className={styles.hoverMe}>hover image</p>
-            <div className={styles.imgWrap}>
+            <div
+              className={
+                scrollIndex.to === 2
+                  ? `${styles.imgWrap} ${styles.onScroll}`
+                  : styles.imgWrap
+              }
+            >
               <img
                 className={styles.img}
                 src={weatherImg}
@@ -33,8 +38,9 @@ const MyWork2 = (props) => {
               />
             </div>
           </div>
-          <MyWork2TxtBox />
+          <MyWork2TxtBox scrollIndex={scrollIndex} />
         </div>
+        <p className={styles.hoverMe}>hover image</p>
       </div>
     </section>
   );
